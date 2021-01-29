@@ -1,0 +1,45 @@
+{
+    "name": "terpomoj/times",
+    "description": "Simple repeat/iteration utility.",
+    "keywords": [
+        "terpomoj",
+        "times",
+        "repeat"
+    ],
+    "homepage": "https://github.com/terpomoj/times",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BinotaLIU",
+            "email": "binota@binota.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "vimeo/psalm": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Terpomoj\\Times\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Terpomoj\\Times\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
